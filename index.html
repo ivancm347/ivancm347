@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achadinhos do Ivan — Meus favoritos com melhor preço</title>
+  <meta name="description" content="Eu garimpo as melhores ofertas e comparo preços entre Shopee, Mercado Livre e TikTok Shop.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  </style>
+</head>
+<body class="bg-white text-zinc-800">
+  
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-xl border-b border-zinc-100">
+    <div class="max-w-6xl mx-auto px-4 py-5 sm:py-6">
+      <div class="flex flex-col items-center text-center">
+        <h1 class="text-[28px] sm:text-4xl font-extrabold tracking-tight">
+          Achadinhos do <span class="text-[#00B14F]">Ivan</span>
+        </h1>
+        <p class="mt-2 text-[15px] sm:text-base text-zinc-600 max-w-2xl leading-relaxed">
+          Eu garimpo as melhores ofertas e comparo preços entre Shopee, Mercado Livre e TikTok Shop. Você clica e compra direto na loja oficial.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pb-20">
+    
+    <!-- Como funciona -->
+    <section class="mt-8 sm:mt-12">
+      <h2 class="text-lg font-bold mb-3">Como funciona?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-4 flex items-start gap-3">
+          <div class="w-8 h-8 shrink-0 rounded-full bg-[#00B14F]/10 text-[#00B14F] font-bold flex items-center justify-center">1</div>
+          <div>
+            <p class="font-semibold text-[15px]">Eu encontro o preço baixo</p>
+            <p class="text-sm text-zinc-500 mt-0.5">Garimpo diário nas melhores lojas</p>
+          </div>
+        <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-4 flex items-start gap-3">
+          <div class="w-8 h-8 shrink-0 rounded-full bg-[#00B14F]/10 text-[#00B14F] font-bold flex items-center justify-center">2</div>
+          <div>
+            <p class="font-semibold text-[15px]">Você escolhe a loja</p>
+            <p class="text-sm text-zinc-500 mt-0.5">Shopee, Mercado Livre ou TikTok</p>
+          </div>
+        <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-4 flex items-start gap-3">
+          <div class="w-8 h-8 shrink-0 rounded-full bg-[#00B14F]/10 text-[#00B14F] font-bold flex items-center justify-center">3</div>
+          <div>
+            <p class="font-semibold text-[15px]">Compra 100% segura</p>
+            <p class="text-sm text-zinc-500 mt-0.5">Direto no site oficial</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="mt-10 sm:mt-14">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl sm:text-2xl font-extrabold">Meus favoritos de hoje</h2>
+        <span class="text-xs font-medium px-3 py-1 rounded-full bg-zinc-100 text-zinc-600">Atualizado hoje</span>
+      </div>
+
+      <div id="grid-produtos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <!-- Cards serão inseridos aqui via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Dica Admin -->
+    <div class="mt-16 bg-zinc-50 border border-dashed border-zinc-300 rounded-2xl">
+      <details class="group">
+        <summary class="list-none cursor-pointer p-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">⚙️</span>
+            <span class="font-semibold text-zinc-700">Como atualizar este site no GitHub</span>
+          </div>
+          <svg class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-5 text-[14px] leading-relaxed text-zinc-600 space-y-2 border-t border-zinc-200 pt-4">
+          <p><strong>1.</strong> Acesse seu repositório no GitHub e abra o arquivo <code class="bg-white px-1.5 py-0.5 rounded border">index.html</code>.</p>
+          <p><strong>2.</strong> Clique no lápis "Edit this file".</p>
+          <p><strong>3.</strong> Role até o final e procure por <code class="bg-white px-1.5 py-0.5 rounded border">const produtos = [</code> — está marcado com <strong>EDITE AQUI</strong>.</p>
+          <p><strong>4.</strong> Copie e cole um bloco, troque <code>imagem</code>, <code>titulo</code>, <code>preco</code> e os <code>links</code> de afiliado. Para não mostrar um botão, deixe <code>""</code> vazio.</p>
+          <p><strong>5.</strong> Clique em "Commit changes". O GitHub Pages atualiza em 1-2 minutos automaticamente.</p>
+        </div>
+      </details>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-zinc-100 py-10 text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="text-[15px]">
+        Siga no Instagram 
+        <a href="https://instagram.com/ivan__c_melo" target="_blank" rel="noopener" class="font-bold text-[#00B14F] hover:underline">@ivan__c_melo</a>
+      </p>
+      <p class="mt-2 text-xs text-zinc-500">Site hospedado no GitHub Pages • Links de afiliado</p>
+    </div>
+  </footer>
+
+<script>
+// ============================================
+// EDITE AQUI - troque imagem, titulo, preco e links
+// ============================================
+// COMO EDITAR CADA PRODUTO:
+// - titulo: "Nome do produto" (aparece em negrito no card)
+// - categoria: "Tecnologia", "Casa", "Beleza", "Moda", etc (badge no canto esquerdo)
+// - desconto: "-43%" ou "" (deixe vazio "" se não tiver desconto)
+// - imagem: cole o link direto da foto (https://...). Use Unsplash ou da própria loja
+// - descricao: texto curto de até 2 linhas
+// - preco: "R$ 159,90" ou "Frete grátis" ou "Mais vendido" ou "" (vazio esconde o preço)
+// - linkShopee / linkML / linkTikTok: cole SEU link de afiliado completo. Deixe "" para NÃO mostrar o botão
+// DICA: Para adicionar novo produto, copie um bloco { ... }, cole abaixo e troque os dados
+// ============================================
+
+const produtos = [
+  {
+    titulo: "Fone Bluetooth Sem Fio com Cancelamento",
+    categoria: "Tecnologia",
+    desconto: "-43%",
+    imagem: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600",
+    descricao: "Bateria 30h, à prova d'água IPX7, case com carregamento rápido.",
+    preco: "R$ 159,90",
+    linkShopee: "https://shopee.com.br/SEU-LINK-AQUI",
+    linkML: "",
+    linkTikTok: ""
+  },
+  {
+    titulo: "Air Fryer 4L Digital Antiaderente",
+    categoria: "Casa",
+    desconto: "",
+    imagem: "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=600",
+    descricao: "12 programas, timer, mais saudável e sem óleo. A queridinha!",
+    preco: "Frete grátis",
+    linkShopee: "https://shopee.com.br/SEU-LINK-AQUI",
+    linkML: "",
+    linkTikTok: ""
+  },
+  {
+    titulo: "Escova Secadora 5 em 1",
+    categoria: "Beleza",
+    desconto: "",
+    imagem: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600",
+    descricao: "Seca, alisa, modela e dá volume. Salão em casa em 10 min.",
+    preco: "R$ 199,90",
+    linkShopee: "https://shopee.com.br/SEU-LINK-AQUI",
+    linkML: "",
+    linkTikTok: ""
+  },
+  {
+    titulo: "Vestido Longo Verão Boho Chic",
+    categoria: "Moda",
+    desconto: "",
+    imagem: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600",
+    descricao: "Tecido leve, fresquinho, perfeito para o dia a dia.",
+    preco: "Mais vendido",
+    linkShopee: "https://shopee.com.br/SEU-LINK-AQUI",
+    linkML: "",
+    linkTikTok: ""
+  },
+  {
+    titulo: "Kit Organizador de Gavetas Colmeia",
+    categoria: "Casa",
+    desconto: "",
+    imagem: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600",
+    descricao: "10 peças, dobrável, acaba com a bagunça do guarda-roupa.",
+    preco: "",
+    linkShopee: "https://shopee.com.br/SEU-LINK-AQUI",
+    linkML: "",
+    linkTikTok: ""
+  },
+  {
+    titulo: "Carregador Turbo 33W Tipo-C",
+    categoria: "Tecnologia",
+    desconto: "",
+    imagem: "https://images.unsplash.com/photo-1583864897784-a1c7c39bf0a0?w=600",
+    descricao: "Carregamento ultra rápido, cabo incluso, proteção inteligente.",
+    preco: "",
+    linkShopee: "https://shopee.com.br/SEU-LINK-AQUI",
+    linkML: "",
+    linkTikTok: ""
+  }
+];
+
+// ============================================
+// RENDERIZAÇÃO AUTOMÁTICA - não precisa mexer abaixo
+// ============================================
+
+const grid = document.getElementById('grid-produtos');
+
+function criarBotao(texto, link, cor) {
+  if (!link) return '';
+  return `<a href="${link}" target="_blank" rel="sponsored noopener noreferrer" class="w-full text-center font-bold text-[15px] py-3 rounded-xl transition-all active:scale-[0.98] shadow-sm hover:shadow-md ${cor}">${texto}</a>`;
+}
+
+function renderizar() {
+  if (!produtos || produtos.length === 0) {
+    grid.innerHTML = `<div class="col-span-full text-center py-16 text-zinc-500">Nenhum achadinho encontrado</div>`;
+    return;
+  }
+
+  grid.innerHTML = produtos.map(p => {
+    const botoes = [
+      criarBotao('Shopee', p.linkShopee, 'bg-[#00B14F] hover:bg-[#009944] text-white'),
+      criarBotao('Mercado Livre', p.linkML, 'bg-[#00B14F] hover:bg-[#009944] text-white'),
+      criarBotao('TikTok Shop', p.linkTikTok, 'bg-[#00B14F] hover:bg-[#009944] text-white')
+    ].filter(Boolean).join('');
+
+    return `
+    <article class="group bg-white rounded-[28px] border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative">
+        <img src="${p.imagem}" alt="${p.titulo}" loading="lazy" class="w-full h-[240px] sm:h-[260px] object-cover bg-zinc-100">
+        <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wide bg-white/95 backdrop-blur px-2.5 py-1 rounded-full shadow-sm border border-zinc-100">${p.categoria}</span>
+        ${p.desconto ? `<span class="absolute top-3 right-3 text-xs font-extrabold bg-red-500 text-white px-2.5 py-1 rounded-full shadow-sm">${p.desconto}</span>` : ''}
+      </div>
+      <div class="p-5 flex flex-col flex-1">
+        <h3 class="font-bold text-[18px] leading-snug">${p.titulo}</h3>
+        <p class="text-[14px] text-zinc-500 mt-1.5 line-clamp-2 min-h-[40px]">${p.descricao}</p>
+        ${p.preco ? `<div class="mt-3"><span class="text-[26px] font-extrabold tracking-tight text-zinc-900">${p.preco}</span></div>` : `<div class="mt-3 h-[32px]"></div>`}
+        <div class="mt-4 flex flex-col gap-2.5">
+          ${botoes || `<span class="text-xs text-zinc-400 text-center py-2">Link em breve</span>`}
+        </div>
+      </div>
+    </article>
+    `;
+  }).join('');
+}
+
+renderizar();
+</script>
+</body>
+</html>
